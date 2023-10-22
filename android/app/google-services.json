@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1015974988324",
+    "project_id": "user-vista",
+    "storage_bucket": "user-vista.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015974988324:android:f0b6b4c4eb36d5aa0de6b1",
+        "android_client_info": {
+          "package_name": "com.example.user_vista"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOOlthl2pnODRxIt3CancvVEEMiAoT9sI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
