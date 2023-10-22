@@ -4,5 +4,5 @@ part 'user_details_page_events.freezed.dart';
 
 @freezed
 abstract class UserDetailsPageEvents with _$UserDetailsPageEvents {
-  factory UserDetailsPageEvents.getUserDetails({required String userId}) = GetUserDetailsEvents;
+  factory UserDetailsPageEvents.getUserDetails({required int userId}) = GetUserDetailsEvents;
 }

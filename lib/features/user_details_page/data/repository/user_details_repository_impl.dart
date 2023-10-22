@@ -7,7 +7,7 @@ import 'package:user_vista/features/user_details_page/data/repository/user_detai
 
 class UserDetailsRepositoryImpl extends UserDetailsRepository{
   @override
-  Future<UserDetailsModel?> getUserDetails({required String userId}) async {
+  Future<UserDetailsModel?> getUserDetails({required int userId}) async {
     try{
       var response = await ApiCalls().getUserInfo(userId);
       if(response.statusCode==200){

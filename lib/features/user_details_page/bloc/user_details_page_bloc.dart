@@ -15,6 +15,12 @@ class UsersDetailsPageBloc extends Bloc<UserDetailsPageEvents, UserDetailsPageSt
   }
 
   FutureOr<void> _userDetailsEventsMapper(UserDetailsPageEvents events, Emitter<UserDetailsPageStates> emit) async {
+    emit(UserDetailsPageStates.loading());
     var response = await _repository.getUserDetails(userId: events.userId);
+    if(response!=null){
+      emit(UserDetailsPageStates.success(userDetailsModel: response));
+    } else {
+      emit(UserDetailsPageStates.error());
+    }
   }
 }

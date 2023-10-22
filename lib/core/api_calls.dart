@@ -22,7 +22,7 @@ class ApiCalls {
     }
   }
 
-  Future<Response> getUserInfo(String userId) async {
+  Future<Response> getUserInfo(int userId) async {
     try {
       final response = await apiClient.dio.get('/users/$userId');
       debugPrint(response.toString());
